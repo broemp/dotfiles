@@ -1,0 +1,3 @@
+exec autotiling-rs
+
+bar swaybar_command waybar

@@ -1,0 +1,4 @@
+include config.d/*
+
+# Expected
+include /etc/sway/config.d/* 

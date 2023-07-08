@@ -1,0 +1,6 @@
+set $term kitty
+set $filemanager thunar
+set $browser firefox
+set $menu killall rofi || rofi -show drun -theme ~/.config/rofi/global/rofi.rasi
+set $visual_editor code
+set $powermenu wlogout --protocol layer-shell -b5 -T 400 -B 400
