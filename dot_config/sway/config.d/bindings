@@ -4,7 +4,7 @@ bindsym $mod+q	kill
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -m 'Do you want to leave?' -b 'Yes' 'sway exit'
 bindsym $mod+Escape exec wlogout -p layer-shell
-
+bindsym Alt+l exec swaylock --hide-keyboard-layout -i $lock_bg
 
 #Vim
 set $left h
