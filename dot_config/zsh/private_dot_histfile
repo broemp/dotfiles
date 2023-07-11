@@ -1,6 +1,0 @@
-dada
-ls -la
-rm .bash_history .bash_logout .bash_profile .bashrc
-ls
-sudo ls -la /mnt/artemis/nas
-code

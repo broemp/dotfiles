@@ -3,6 +3,8 @@ set $mod Mod4
 bindsym $mod+q	kill
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -m 'Do you want to leave?' -b 'Yes' 'sway exit'
+bindsym $mod+Escape exec wlogout -p layer-shell
+
 
 #Vim
 set $left h
@@ -17,7 +19,7 @@ bindsym $mod+Return 	exec $term
 bindsym $mod+e 		exec $filemanager
 bindsym $mod+v		exec $visual_editor
 bindsym $mod+d		exec $menu
-bindsym $mod+w      exec $browser
+bindsym $mod+w      	exec $browser
 
 #Workspaces
 bindsym $mod+1 workspace number 1
@@ -40,5 +42,3 @@ bindsym $mod+Shift+6 move container to workspace number 6
 bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
-
-#
