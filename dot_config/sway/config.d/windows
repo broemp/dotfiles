@@ -2,6 +2,8 @@ for_window [title="^zoom$"] floating enable
 for_window 	[app_id="mpv"]		    inhibit_idle	fullscreen
 for_window	[app_id="imv"]	        border		    pixel 1
 
+for_window [class="^.*"] inhibit_idle fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
 
 assign [app_id="firefox"] workspace number 1
 assign [app_id="zathura"] workspace number 2
