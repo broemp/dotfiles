@@ -58,3 +58,23 @@ bindsym $mod+Shift+6 move container to workspace number 6
 bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
+
+# Sway OSD
+# Sink volume raise optionally with --device
+bindsym XF86AudioRaiseVolume exec swayosd --output-volume raise
+# Sink volume lower optionally with --device
+bindsym XF86AudioLowerVolume exec  swayosd --output-volume lower --device alsa_output.pci-0000_11_00.4.analog-stereo.monitor
+# Sink volume toggle mute
+bindsym XF86AudioMute exec swayosd --output-volume mute-toggle
+# Source volume toggle mute
+bindsym XF86AudioMicMute exec swayosd --input-volume mute-toggle
+
+# Capslock (If you don't want to use the backend)
+bindsym --release Caps_Lock exec swayosd --caps-lock
+# Capslock but specific LED name (/sys/class/leds/)
+bindsym --release Caps_Lock exec swayosd --caps-lock-led input19::capslock
+
+# Brightness raise
+bindsym XF86MonBrightnessUp exec swayosd --brightness raise
+# Brightness lower
+bindsym XF86MonBrightnessDown exec swayosd --brightness lower
