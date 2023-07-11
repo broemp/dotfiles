@@ -1,3 +1,19 @@
 exec autotiling-rs
+exec swayidle -w \
+         timeout 300 'swaylock --hide-keyboard-layout -f -c 000000 -i $lock_bg' \
+         timeout 600 'swaymsg "output * power off"' \
+         resume 'swaymsg "output * power on"' \
+         after-resume 'swaymsg "output * enable"' \
+         before-sleep 'swaylock --hide-keyboard-layout -f -c 000000 -i $lock_bg'
+
+# Workaround for GTK apps hanging during init
+# See https://github.com/swaywm/sway/wiki#gtk-applications-take-20-seconds-to-start
+# See https://github.com/swaywm/sway/issues/5732
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+# End of workaround
+
+exec lxpolkit
 
 bar swaybar_command waybar

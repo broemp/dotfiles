@@ -19,6 +19,7 @@ bindsym $mod+Return 	exec $term
 bindsym $mod+e 		exec $filemanager
 bindsym $mod+v		exec $visual_editor
 bindsym $mod+d		exec $menu
+bindsym $mod+Space	exec $menu
 bindsym $mod+w      	exec $browser
 
 #Workspaces
