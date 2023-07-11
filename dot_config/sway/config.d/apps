@@ -4,3 +4,4 @@ set $browser firefox
 set $menu j4-dmenu-desktop --dmenu='bemenu -i' --term='kitty'
 set $visual_editor code
 set $powermenu wlogout --protocol layer-shell -b5 -T 400 -B 400
+set $notifications mako
