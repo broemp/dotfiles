@@ -15,5 +15,6 @@ exec dbus-update-activation-environment 2>/dev/null && \
 # End of workaround
 
 exec lxpolkit
+exec mako
 
 bar swaybar_command waybar
