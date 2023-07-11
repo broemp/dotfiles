@@ -47,7 +47,11 @@ if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi
 
+# ls
 alias ls='exa'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
+
+# wifi
+alias wifi='nmtui-connect'
