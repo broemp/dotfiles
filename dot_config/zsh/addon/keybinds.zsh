@@ -2,14 +2,3 @@ bindkey '^H' backward-kill-word
 bindkey '^[[3;5~' kill-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey "^[[H0" beginning-of-line
-bindkey "\e[1~": beginning-of-line
-bindkey "\e[4~": end-of-line
-bindkey "\e[7~": beginning-of-line
-bindkey "\e[8~": end-of-line
-bindkey "\eOH": beginning-of-line
-bindkey "\eOF": end-of-line
-bindkey "\e[H": beginning-of-line
-bindkey "\e[F": end-of-line
