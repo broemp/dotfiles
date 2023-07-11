@@ -55,3 +55,7 @@ alias lla='ls -la'
 
 # wifi
 alias wifi='nmtui-connect'
+
+# Cat
+alias cat='bat -pp'
+alias catt='bat'
