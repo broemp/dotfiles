@@ -14,6 +14,17 @@ export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.fnm:$PATH
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export XDG_CURRENT_DESKTOP="Wayland"
+#export GDK_BACKEND=wayland
+export CLUTTER_BACKEND=wayland
+export XDG_SESSION_TYPE=wayland
+export QT_QPA_PLATFORM=wayland-egl
+export QT_WAYLAND_FORCE_DPI=physical
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+export MOZ_ENABLE_WAYLAND=1
+export MOZ_WEBRENDER=1
+
 eval "$(fnm env)"
 eval "$(zoxide init zsh)"
 
