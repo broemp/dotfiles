@@ -6,3 +6,5 @@ bindkey '^[[3~'  delete-char
 bindkey '^[[3;5~' kill-word
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
