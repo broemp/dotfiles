@@ -69,11 +69,6 @@ bindsym XF86AudioMute exec swayosd --output-volume mute-toggle
 # Source volume toggle mute
 bindsym XF86AudioMicMute exec swayosd --input-volume mute-toggle
 
-# Capslock (If you don't want to use the backend)
-bindsym --release Caps_Lock exec swayosd --caps-lock
-# Capslock but specific LED name (/sys/class/leds/)
-bindsym --release Caps_Lock exec swayosd --caps-lock-led input19::capslock
-
 # Brightness raise
 bindsym XF86MonBrightnessUp exec swayosd --brightness raise
 # Brightness lower
