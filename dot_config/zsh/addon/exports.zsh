@@ -27,7 +27,6 @@ export MOZ_WEBRENDER=1
 
 eval "$(fnm env)"
 eval "$(zoxide init zsh)"
-eval $(ssh-agent)
 
 # bemenu catpuccin theme
 export BEMENU_OPTS='-i -l 20 --fb "#1e1e2e" --ff "#94e2d5" --nb "#1e1e2e" --nf "#f5e0dc" --tb "#1e1e2e" --hb "#1e1e2e" --tf "#cba6f7" --hf "#89b4fa" --nf "#f5e0dc" --af "#f5e0dc" --ab "#1e1e2e"'
