@@ -2,7 +2,11 @@ output * bg /home/broemp/images/walls/firewatch.jpg fill
 
 focus_follows_mouse yes
 
-output eDP-1 scale 1.5 mode 2880x1800@90Hz
+output eDP-1 {
+    scale 1.5 
+    mode 2880x1800@90Hz
+}
+
 input * repeat_rate 50
 input type:keyboard xkb_layout us-german-umlaut
 
