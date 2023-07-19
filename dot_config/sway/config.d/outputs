@@ -4,7 +4,7 @@ focus_follows_mouse yes
 
 output eDP-1 {
     scale 1.5 
-    mode 2880x1800@90Hz
+    mode 2880x1600@90Hz
 }
 
 input * repeat_rate 50
@@ -25,3 +25,7 @@ input "type:pointer" {
  accel_profile flat
  pointer_accel 0.3
 }
+
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable`
