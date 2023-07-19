@@ -16,5 +16,5 @@ exec dbus-update-activation-environment 2>/dev/null && \
 
 exec lxpolkit
 exec mako
-
+exec udiskie &
 bar swaybar_command waybar
