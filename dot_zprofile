@@ -15,11 +15,4 @@ alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 export SSB_HOME="$XDG_DATA_HOME"/zoom
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
-if ps -p $SSH_AGENT_PID > /dev/null
-then
-   echo "ssh-agent is already running"
-   # Do something knowing the pid exists, i.e. the process with $PID is running
-else
 eval `ssh-agent -s`
-fi
-
