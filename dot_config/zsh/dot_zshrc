@@ -9,7 +9,7 @@ HISTFILE=~/.config/zsh/.zsh_history
 plug "$HOME/.config/zsh/addon/aliases.zsh"
 plug "$HOME/.config/zsh/addon/exports.zsh"
 plug "$HOME/.config/zsh/addon/keybinds.zsh"
-plug "$HOME/.config/zsh/addon/secret.zsh"
+plug "$HOME/.config/zsh/addon/secrets.zsh"
 
 # plugins
 plug "esc/conda-zsh-completion"
