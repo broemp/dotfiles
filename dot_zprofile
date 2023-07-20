@@ -16,4 +16,4 @@ export SSB_HOME="$XDG_DATA_HOME"/zoom
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Start ssh-agent
-$XDG_RUNTIME_DIR/ssh-agent.socket
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"/ssh-agent.socket
