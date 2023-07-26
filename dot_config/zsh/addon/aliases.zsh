@@ -53,8 +53,12 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 
-# wifi
+# Connectivity
 alias wifi='nmtui-connect'
+alias bluetooth-start='sudo systemctl start bluetooth'
+alias bluetooth-stop='sudo systemctl stop bluetooth'
+alias bluetooth-restart='sudo systemctl restart bluetooth'
+
 
 # Cat
 alias cat='bat -pp'
