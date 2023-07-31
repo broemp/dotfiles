@@ -20,7 +20,7 @@ alias fgrep='fgrep --color=auto'
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
-alias rm='trash-put'
+alias rm='rm -r'
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes
@@ -53,12 +53,8 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 
-# Connectivity
+# wifi
 alias wifi='nmtui-connect'
-alias bluetooth-start='sudo systemctl start bluetooth'
-alias bluetooth-stop='sudo systemctl stop bluetooth'
-alias bluetooth-restart='sudo systemctl restart bluetooth'
-
 
 # Cat
 alias cat='bat -pp'
