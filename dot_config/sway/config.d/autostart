@@ -1,4 +1,5 @@
 exec autotiling-rs
+exec_always ~/.config/sway/config.d/scripts/lidscript.sh
 exec swayidle -w \
          timeout 300 'swaylock --hide-keyboard-layout -f -c 000000 -i $lock_bg' \
          timeout 600 'swaymsg "output * power off"' \
