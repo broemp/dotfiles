@@ -16,4 +16,4 @@ export SSB_HOME="$XDG_DATA_HOME"/zoom
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Start ssh-agent
-eval $(keychain --eval --quiet)
+eval $(ssh-agent)
