@@ -10,7 +10,7 @@ bindsym $mod+g exec flash_window
 #Launch Apps
 bindsym $mod+Return 	exec $term
 bindsym $mod+e 		exec $filemanager
-bindsym $mod+v		exec $visual_editor
+bindsym $mod+v		exec $editor
 bindsym $mod+d		exec $menu
 bindsym $mod+Space	exec $menu
 bindsym $mod+w      	exec $browser
@@ -52,10 +52,10 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+f fullscreen
 
 mode "resize" {
-    bindsym Left resize shrink width 25px
-    bindsym Down resize grow height 25px
-    bindsym Up resize shrink height 25px
-    bindsym Right resize grow width 25px
+    bindsym h resize shrink width 25px
+    bindsym j resize grow height 25px
+    bindsym k resize shrink height 25px
+    bindsym l resize grow width 25px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

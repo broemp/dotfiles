@@ -2,6 +2,6 @@ set $term kitty
 set $filemanager kitty ranger
 set $browser firefox
 set $menu j4-dmenu-desktop --dmenu='bemenu -i -l 20 --fb "#1e1e2e" --ff "#94e2d5" --nb "#1e1e2e" --nf "#f5e0dc" --tb "#1e1e2e" --hb "#1e1e2e" --tf "#cba6f7" --hf "#89b4fa" --nf "#f5e0dc" --af "#f5e0dc" --ab "#1e1e2e"' --term='kitty'
-set $visual_editor code
+set $editor nvim
 set $powermenu wlogout --protocol layer-shell -b5 -T 400 -B 400
 set $notifications mako
