@@ -1,5 +1,4 @@
 exec autotiling-rs
-exec_always ~/.config/sway/config.d/scripts/lidscript.sh
 # Workaround for GTK apps hanging during init
 # See https://github.com/swaywm/sway/wiki#gtk-applications-take-20-seconds-to-start
 # See https://github.com/swaywm/sway/issues/5732
