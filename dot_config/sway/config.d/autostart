@@ -1,4 +1,11 @@
 exec autotiling-rs
+exec_always ~/.config/sway/config.d/scripts/lidscript.sh
+exec swayidle -w \
+	timeout 1800 'swaylock -f' \
+	timeout 1805 'swaymsg "output * power off"' \
+	resume 'swaymsg "output * power on"' \
+  before-sleep 'swaylock'
+
 # Workaround for GTK apps hanging during init
 # See https://github.com/swaywm/sway/wiki#gtk-applications-take-20-seconds-to-start
 # See https://github.com/swaywm/sway/issues/5732
