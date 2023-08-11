@@ -19,6 +19,4 @@ export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
-
-# Start ssh-agent
-eval $(ssh-agent)
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
