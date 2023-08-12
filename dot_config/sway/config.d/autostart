@@ -12,9 +12,18 @@ exec swayidle -w \
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+# More GTK shit
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Catppuccin-Mocha-Standard-Mauve-dark'
+    #gsettings set $gnome-schema icon-theme 'Your icon theme'
+    #gsettings set $gnome-schema font-name 'Your font name'
+}
 # End of workaround
 
 exec lxpolkit
 exec mako
 exec udiskie &
 bar swaybar_command waybar
+
