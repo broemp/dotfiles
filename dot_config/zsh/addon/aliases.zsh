@@ -64,4 +64,5 @@ alias catt='bat'
 alias suvim='sudo -E -s nvim'
 alias dockre='docker'
 
-alias bton='sudo systemctl start bluetooth.service'
+alias blon='sudo systemctl start bluetooth.service'
+alias bloff='sudo systemctl stop bluetooth.service'
