@@ -11,7 +11,7 @@ vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { sile
 --- Harpoon keymaps
 local wk = require("which-key")
 wk.register({
-  h = {
+  ["<leader>h"] = {
     name = "harpoon",
     a = { "<cmd>lua require('harpoon.mark').add_file()<cr>", "add file" },
     r = { "<cmd>lua require('harpoon.mark').rm_file()<cr>", "remove file" },
