@@ -26,6 +26,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.dap.nlua" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "plugins" },
+    -- Extra plugins
+    { import = "tpope/vim-dadbod" },
+    { import = "kristijanhusak/vim-dadbod-ui" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -51,6 +54,26 @@ require("lazy").setup({
         "tutor",
         "zipPlugin",
       },
+    },
+    {
+      "nvim-neorg/neorg",
+      build = ":Neorg sync-parsers",
+      dependencies = { "nvim-lua/plenary.nvim" },
+      config = function()
+        require("neorg").setup({
+          load = {
+            ["core.defaults"] = {}, -- Loads default behaviour
+            ["core.concealer"] = {}, -- Adds pretty icons to your documents
+            ["core.dirman"] = { -- Manages Neorg workspaces
+              config = {
+                workspaces = {
+                  notes = "~/notes",
+                },
+              },
+            },
+          },
+        })
+      end,
     },
   },
 })
