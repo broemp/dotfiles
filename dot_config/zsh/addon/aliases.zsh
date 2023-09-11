@@ -49,7 +49,7 @@ fi
 # ls
 alias l='ls'
 alias sl='ls'
-alias ls='exa'
+alias ls='eza'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
