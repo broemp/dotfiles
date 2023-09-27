@@ -8,8 +8,8 @@ vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true }
 vim.keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
 vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
 
---- Harpoon keymaps
 local wk = require("which-key")
+--- Harpoon keymaps
 wk.register({
   ["<leader>h"] = {
     name = "harpoon",
