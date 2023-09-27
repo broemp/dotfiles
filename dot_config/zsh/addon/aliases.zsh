@@ -49,7 +49,7 @@ fi
 # ls
 alias l='ls'
 alias sl='ls'
-alias ls='eza'
+alias ls='exa'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
@@ -64,5 +64,5 @@ alias catt='bat'
 alias suvim='sudo -E -s nvim'
 alias dockre='docker'
 
-alias blon='sudo systemctl start bluetooth.service'
-alias bloff='sudo systemctl stop bluetooth.service'
+alias bton='sudo systemctl start bluetooth.service'
+alias btoff='sudo systemctl stop bluetooth.service'
