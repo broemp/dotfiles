@@ -1,8 +1,17 @@
 {
   "position": "top",
-  "modules-left": ["sway/workspaces"],
-  "modules-center": ["custom/spotify"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-left": [
+    "sway/workspaces"
+  ],
+  "modules-center": [
+    "custom/spotify"
+  ],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "battery",
+    "clock"
+  ],
   // Modules configuration
   "sway/workspaces": {
     "disable-scroll": true,
@@ -26,18 +35,6 @@
       "focused": ""
     }
   },
- "custom/spotify": {
-    "format": "<span foreground='#E5B4E2'> </span><span font='OperatorMonoSSm Nerd Font weight=325 Italic'>{}</span>",
-    "interval": 1,
-    "exec-if": "pgrep spotify",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-scroll-up": "playerctl -p spotify previous",
-    "on-scroll-down": "playerctl -p spotify next",
-    "tooltip": false,
-    "escape": true,
-    "max-length": 60,
-    "exec": "$HOME/bin/spotify.sh"
-  },
   "clock": {
     "format": "<span foreground='#C6AAE8'> </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -54,7 +51,13 @@
     "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
     "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon}</span> {time}",
     "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "tooltip-format": "{time}"
   },
   "network": {
@@ -75,7 +78,10 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", ""]
+      "default": [
+        "",
+        ""
+      ]
     }
   }
 }

@@ -64,15 +64,19 @@ bindsym $mod+r mode "resize"
 
 # Sway OSD
 # Sink volume raise optionally with --device
-bindsym XF86AudioRaiseVolume exec swayosd --output-volume raise
+bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise
 # Sink volume lower optionally with --device
-bindsym XF86AudioLowerVolume exec  swayosd --output-volume lower 
+bindsym XF86AudioLowerVolume exec  swayosd-client --output-volume lower 
 # Sink volume toggle mute
-bindsym XF86AudioMute exec swayosd --output-volume mute-toggle
+bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
 # Source volume toggle mute
-bindsym XF86AudioMicMute exec swayosd --input-volume mute-toggle
+bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
 
 # Brightness raise
-bindsym XF86MonBrightnessUp exec swayosd --brightness raise
+bindsym XF86MonBrightnessUp exec swayosd-client --brightness raise
 # Brightness lower
-bindsym XF86MonBrightnessDown exec swayosd --brightness lower
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness lower
+
+# Screenshots
+bindsym Print exec $screenshot_window
+bindsym Print+Shift exec $screenshot_area

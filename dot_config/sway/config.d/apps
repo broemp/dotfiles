@@ -5,3 +5,5 @@ set $menu j4-dmenu-desktop --dmenu='bemenu -i -l 20 --fb "#1e1e2e" --ff "#94e2d5
 set $editor nvim
 set $powermenu wlogout --protocol layer-shell -b5 -T 400 -B 400
 set $notifications mako
+set $screenshot_window grimshot save window
+set $screenshot_area grimshot save area

@@ -4,7 +4,7 @@ output * bg /home/broemp/images/walls/firewatch.jpg fill
 focus_follows_mouse yes
 
 output eDP-1 {
-    scale 1.5 
+    scale 1.5
     mode 2880x1600@90Hz
 }
 
