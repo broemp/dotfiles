@@ -1,0 +1,50 @@
+
+2023/07/26 (14:46:11) | ===> btop++ v.1.2.13
+2023/07/26 (14:46:11) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/07/26 (14:59:42) | ===> btop++ v.1.2.13
+2023/07/26 (14:59:42) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/07/26 (15:02:44) | ===> btop++ v.1.2.13
+2023/07/26 (15:02:44) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/14 (14:35:08) | ===> btop++ v.1.2.13
+2023/08/14 (14:35:08) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/14 (14:43:30) | ===> btop++ v.1.2.13
+2023/08/14 (14:43:30) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/14 (16:02:33) | ===> btop++ v.1.2.13
+2023/08/14 (16:02:33) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/14 (16:02:52) | ===> btop++ v.1.2.13
+2023/08/14 (16:02:52) | DEBUG: Starting in DEBUG mode!
+2023/08/14 (16:02:52) | INFO: Logger set to DEBUG
+2023/08/14 (16:02:52) | DEBUG: Using locale en_US.UTF-8
+2023/08/14 (16:02:52) | INFO: Running on /dev/pts/6
+
+2023/08/14 (16:33:27) | ===> btop++ v.1.2.13
+2023/08/14 (16:33:27) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/16 (13:25:20) | ===> btop++ v.1.2.13
+2023/08/16 (13:25:20) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/16 (13:38:29) | ===> btop++ v.1.2.13
+2023/08/16 (13:38:29) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/16 (14:58:03) | ===> btop++ v.1.2.13
+2023/08/16 (14:58:03) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/19 (17:11:39) | ===> btop++ v.1.2.13
+2023/08/19 (17:11:39) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
+
+2023/08/21 (19:23:15) | ===> btop++ v.1.2.13
+2023/08/21 (19:23:15) | ERROR: Stall in Runner thread, restarting!
+2023/08/21 (19:45:04) | WARNING: Failed to join _runner thread on exit!
+2023/08/21 (19:45:04) | ERROR: Runner thread died unexpectedly!
+
+2023/08/24 (13:02:32) | ===> btop++ v.1.2.13
+2023/08/24 (13:02:32) | ERROR: Stall in Runner thread, restarting!
+
+2023/09/18 (16:46:56) | ===> btop++ v.1.2.13
+2023/09/18 (16:46:56) | WARNING: Failed to get disk/partition stats for mount "/home/broemp/mnt/nas" with statvfs64 error code: 19. Ignoring...
