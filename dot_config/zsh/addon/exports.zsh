@@ -34,5 +34,5 @@ export BEMENU_BACKEND='wayland'
 export BEMENU_SCALE='2'
 
 # Conda
-export CONDA_PKGS_DIRS="$HOME/.local/share/conda/pkgs"
-export CONDA_ENVS_PATH="$HOME/.local/share/conda/envs"
+export CONDA_PKGS_DIRS="$HOME/.local/share/conda/"
+export CONDA_ENVS_PATH="$HOME/.local/share/conda/"
