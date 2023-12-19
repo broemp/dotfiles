@@ -39,3 +39,5 @@ if command -v bat &> /dev/null; then
   alias cat="bat -pp"
   alias catt="bat"
 fi
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
