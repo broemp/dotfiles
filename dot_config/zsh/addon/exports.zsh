@@ -32,3 +32,6 @@ eval "$(zoxide init zsh)"
 export BEMENU_OPTS='-i -l 20 --fb "#1e1e2e" --ff "#94e2d5" --nb "#1e1e2e" --nf "#f5e0dc" --tb "#1e1e2e" --hb "#1e1e2e" --tf "#cba6f7" --hf "#89b4fa" --nf "#f5e0dc" --af "#f5e0dc" --ab "#1e1e2e"'
 export BEMENU_BACKEND='wayland'
 export BEMENU_SCALE='2'
+
+# Conda
+export CONDA_PKGS_DIRS=$HOME/.local/share/conda
