@@ -41,3 +41,6 @@ if command -v bat &> /dev/null; then
 fi
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+#Activate direnv
+eval "$(direnv hook zsh)"
