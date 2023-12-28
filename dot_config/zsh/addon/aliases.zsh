@@ -66,3 +66,7 @@ alias dockre='docker'
 
 alias bton='sudo systemctl start bluetooth.service'
 alias btoff='sudo systemctl stop bluetooth.service'
+
+# Fuck NPM
+alias npm=pnpm
+alias npx=pnpx
