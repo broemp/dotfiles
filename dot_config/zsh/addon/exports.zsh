@@ -40,3 +40,5 @@ export CONDA_ENVS_PATH="$HOME/.local/share/conda/"
 
 # pnpm
 export PNPM_HOME=$HOME/.config/pnpm
+export PATH="$HOME/.config/pnpm":$PATH
+
