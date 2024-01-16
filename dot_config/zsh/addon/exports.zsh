@@ -42,3 +42,15 @@ export CONDA_ENVS_PATH="$HOME/.local/share/conda/"
 export PNPM_HOME=$HOME/.config/pnpm
 export PATH="$HOME/.config/pnpm":$PATH
 
+#nvm
+export NVM_DIR="$XDG_DATA_HOME"/nvm
+
+#java 
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+#Python
+export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
+
+#Xinit
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
