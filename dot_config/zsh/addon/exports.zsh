@@ -54,3 +54,6 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 #Xinit
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+
+#Flutter
+export CHROME_EXECUTABLE=/sbin/google-chrome-stable
