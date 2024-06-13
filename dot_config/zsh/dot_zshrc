@@ -1,32 +1,32 @@
 #!/bin/sh
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
-
 # history
-HISTFILE=~/.config/zsh/.zsh_history
+export HISTFILE="$HOME/.config/zsh/.zsh_history"
+export HISTFILESIZE=10000
+export HISTSIZE=50000
+setopt INC_APPEND_HISTORY
+export HISTTIMEFORMAT="[%F %T] "
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE      # ignore commands that start with space
+setopt HIST_EXPIRE_DUPS_FIRST # delete duplicates first when HISTFILE size exceeds HISTSIZE
 
 # source
-plug "$HOME/.config/zsh/addon/aliases.zsh"
-plug "$HOME/.config/zsh/addon/exports.zsh"
-plug "$HOME/.config/zsh/addon/keybinds.zsh"
-plug "$HOME/.config/zsh/addon/secrets.zsh"
+plug "$HOME/.config/zsh/aliases.zsh"
+plug "$HOME/.config/zsh/exports.zsh"
+plug "$HOME/.config/zsh/keybinds.zsh"
+plug "$HOME/.config/zsh/secrets.zsh"
 
 # plugins
 plug "esc/conda-zsh-completion"
 plug "zsh-users/zsh-autosuggestions"
-# plug "hlissner/zsh-autopair"
-plug "zap-zsh/supercharge"
-#plug "zap-zsh/vim"
-# plug "spaceship-prompt/spaceship-prompt"
-# plug "zap-zsh/atmachine-prompt"
-#plug "zap-zsh/zap-prompt"
+plug "hlissner/zsh-autopair"
+plug "zsh-autocomplete"
 plug "zap-zsh/fzf"
-plug "zap-zsh/exa"
 plug "zsh-users/zsh-syntax-highlighting"
-#
-plug "djui/alias-tips"
 plug "arzzen/calc.plugin.zsh"
-# eval "$(starship init zsh)"
+plug "Tarrasch/zsh-autoenv"
 
 plug "spaceship-prompt/spaceship-prompt"
 
@@ -34,13 +34,6 @@ plug "spaceship-prompt/spaceship-prompt"
 bindkey '^ ' autosuggest-accept
 
 export PATH="$HOME/.local/bin":$PATH
-
-if command -v bat &> /dev/null; then
-  alias cat="bat -pp"
-  alias catt="bat"
-fi
-
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 #Activate direnv
 eval "$(direnv hook zsh)"
