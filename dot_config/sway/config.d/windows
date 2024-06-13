@@ -5,9 +5,5 @@ for_window	[app_id="imv"]	        border		    pixel 1
 for_window [class="^.*"] inhibit_idle fullscreen
 for_window [app_id="^.*"] inhibit_idle fullscreen
 
-assign [app_id="firefox"] workspace number 1
-assign [app_id="zathura"] workspace number 2
-assign [app_id="code"] workspace number 2
-assign [app_id="obsidian"] workspace number 2
-
+#Flameshot https://github.com/flameshot-org/flameshot/blob/master/docs/Sway%20and%20wlroots%20support.md
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
